@@ -10,9 +10,6 @@
             background: linear-gradient(to right, #6a11cb, #2575fc);
             margin: 0;
             color: white;
-            padding: 10px;
-            border: 10px solid;
-            border-image: linear-gradient(to bottom, #ff7e5f, #feb47b) 1;
         }
         header {
             text-align: center;
@@ -35,22 +32,18 @@
         .achievement {
             position: absolute;
             top: 20px;
-            right: 20px;
+            right: 0;
             text-align: center;
             font-family: 'Courier New', monospace;
             font-style: italic;
             color: #ffea00;
-            max-width: 400px;
+            max-width: 400px; /* Increased width */
         }
         .achievement img {
-            width: 250px;
-            height: 250px;
-            border-radius: 20px;
-            object-fit: contain;
-            border: 8px solid transparent;
-            background: linear-gradient(45deg, #ff7e5f, #feb47b);
-            padding: 5px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            width: 100%; /* Make the image take the full width of the container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 0%; /* No border radius to make it rectangular */
+            margin-bottom: 0; /* Remove margin for a more uniform look */
         }
         section {
             padding: 2rem;
@@ -110,7 +103,7 @@
     <header>
         <h1>Gaurav Pradhan</h1>
         <img src="profile.jpeg" alt="Gaurav Pradhan" class="profile-pic">
-        <p>Software Developer | Data Analyst</p>
+        <p>Software Developer | Data Science | Machine Learning</p>
         <div class="achievement">
             <img src="odishaSkill.jpg" alt="Odisha Skills Medal">
             <p>Odisha Skill 2024 Silver Medalist</p>
@@ -119,7 +112,7 @@
     <section>
         <h2>About Me</h2>
         <p>
-            Hi, I am Gaurav Pradhan, a passionate Software Developer and Data Analyst currently pursuing my B.Tech in Computer Science and Engineering (Data Science) at C.V. Raman Global University. With a strong foundation in programming, machine learning, and database management, I have successfully completed multiple academic projects and internships showcasing my technical expertise and problem-solving skills.
+            Hi, I am Gaurav Pradhan, a passionate Software Developer currently pursuing my B.Tech in Computer Science and Engineering (Data Science) at C.V. Raman Global University. With a strong foundation in programming, machine learning, and database management, I have successfully completed multiple academic projects and internships showcasing my technical expertise and problem-solving skills.
         </p>
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:gauravpradhan0912@gmail.com">gauravpradhan0912@gmail.com</a></p>
@@ -141,7 +134,7 @@
         <div class="project-card">
             <h3>JustMuesli</h3>
             <p>Built a desktop app for customizing cereal mixes with 20+ ingredients.</p>
-            <a href="https://gaurav-0912.github.io/JustMuselie/" target="_blank">View Project</a>
+            <a href="https://github.com/gaurav-0912/Just-Museli" target="_blank">View Project</a>
         </div>
         <div class="project-card">
             <h3>Market Basket Analysis</h3>
